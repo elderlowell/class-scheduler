@@ -1,0 +1,126 @@
+<div class="heading">
+  <p>Week of Monday: <span class="bold">First Day of Week</span></p>
+</div>
+
+<div class="scheduleWrapper">
+  <md-card class="column">
+    <md-card-title>Monday</md-card-title>
+    <md-card-subtitle>Date</md-card-subtitle>
+    <md-accordion multi="true">
+      <md-expansion-panel *ngFor="let class of monday" hideToggle="true" [expanded]="expandedTF" [disabled]="disabledTF">
+        <md-expansion-panel-header class="largerX2">
+          {{ class.name }} - {{ class.student }}
+        </md-expansion-panel-header>
+        <div class="expansionContent">
+          <div class="leftContent">
+            <div class="larger">{{ class.assignment }}</div>
+            <div *ngIf="class.notes">Notes: {{ class.notes }}</div>
+          </div>
+          <div class="rightContent">
+            <button md-button class="toggle" (click)="class.id = !class.id">Options</button>
+          </div>
+        </div>
+        <md-action-row *ngIf="class.id">
+          <button md-button>Edit</button>
+          <button md-button>Bump</button>
+        </md-action-row>
+      </md-expansion-panel>
+    </md-accordion>
+  </md-card>
+  <md-card class="column">
+    <md-card-title>Tuesday</md-card-title>
+    <md-card-subtitle>Date</md-card-subtitle>
+    <md-accordion multi="true">
+      <md-expansion-panel *ngFor="let class of tuesday" hideToggle="true" [expanded]="expandedTF" [disabled]="disabledTF">
+        <md-expansion-panel-header class="largerX2">
+          {{ class.name }} - {{ class.student }}
+        </md-expansion-panel-header>
+        <div class="expansionContent">
+          <div class="leftContent">
+            <span class="larger">{{ class.assignment }}</span>
+            <span *ngIf="class.notes">;<br />Notes: {{ class.notes }}</span>
+          </div>
+          <div class="rightContent">
+            <button md-button class="toggle" (click)="class.id = !class.id">Options</button>
+          </div>
+        </div>
+        <md-action-row *ngIf="class.id">
+          <button md-button>Edit</button>
+          <button md-button>Bump</button>
+        </md-action-row>
+      </md-expansion-panel>
+    </md-accordion>
+  </md-card>
+  <md-card class="column">
+    <md-card-title>Wednesday</md-card-title>
+    <md-card-subtitle>Date</md-card-subtitle>
+    <md-accordion multi="true">
+      <md-expansion-panel *ngFor="let class of wednesday" hideToggle="true" [expanded]="expandedTF" [disabled]="disabledTF">
+        <md-expansion-panel-header class="largerX2">
+          {{ class.name }} - {{ class.student }}
+        </md-expansion-panel-header>
+        <div class="expansionContent">
+          <div class="leftContent">
+            <span class="larger">{{ class.assignment }}</span>
+            <span *ngIf="class.notes">;<br />Notes: {{ class.notes }}</span>
+          </div>
+          <div class="rightContent">
+            <button md-button class="toggle" (click)="class.id = !class.id">Options</button>
+          </div>
+        </div>
+        <md-action-row *ngIf="class.id">
+          <button md-button>Edit</button>
+          <button md-button>Bump</button>
+        </md-action-row>
+      </md-expansion-panel>
+    </md-accordion>
+  </md-card>
+  <md-card class="column">
+    <md-card-title>Thursday</md-card-title>
+    <md-card-subtitle>Date</md-card-subtitle>
+    <md-accordion multi="true">
+      <md-expansion-panel *ngFor="let class of thursday" hideToggle="true" [expanded]="expandedTF" [disabled]="disabledTF">
+        <md-expansion-panel-header class="largerX2">
+          {{ class.name }} - {{ class.student }}
+        </md-expansion-panel-header>
+        <div class="expansionContent">
+          <div class="leftContent">
+            <span class="larger">{{ class.assignment }}</span>
+            <span *ngIf="class.notes">;<br />Notes: {{ class.notes }}</span>
+          </div>
+          <div class="rightContent">
+            <button md-button class="toggle" (click)="class.id = !class.id">Options</button>
+          </div>
+        </div>
+        <md-action-row *ngIf="class.id">
+          <button md-button>Edit</button>
+          <button md-button>Bump</button>
+        </md-action-row>
+      </md-expansion-panel>
+    </md-accordion>
+  </md-card>
+  <md-card class="column">
+    <md-card-title>Friday</md-card-title>
+    <md-card-subtitle>Date</md-card-subtitle>
+    <md-accordion multi="true">
+      <md-expansion-panel *ngFor="let class of friday" hideToggle="true" [expanded]="expandedTF" [disabled]="disabledTF">
+        <md-expansion-panel-header class="largerX2">
+          {{ class.name }} - {{ class.student }}
+        </md-expansion-panel-header>
+        <div class="expansionContent">
+          <div class="leftContent">
+            <span class="larger">{{ class.assignment }}</span>
+            <span *ngIf="class.notes">;<br />Notes: {{ class.notes }}</span>
+          </div>
+          <div class="rightContent">
+            <button md-button class="toggle" (click)="class.id = !class.id">Options</button>
+          </div>
+        </div>
+        <md-action-row *ngIf="class.id">
+          <button md-button>Edit</button>
+          <button md-button>Bump</button>
+        </md-action-row>
+      </md-expansion-panel>
+    </md-accordion>
+  </md-card>
+</div>

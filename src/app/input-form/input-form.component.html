@@ -1,0 +1,18 @@
+<div class="body">
+  <h2 class="">To submit information about a complaint, enter the details below:</h2>
+  <md-card>
+    <form class="inputForm">
+      <md-form-field class="formField">
+        <input mdInput [mdDatepicker]="picker" placeholder="Date of Incident" />
+        <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+        <md-datepicker #picker></md-datepicker>
+      </md-form-field><br />
+      <md-form-field class="formField">
+        <input mdInput placeholder="Name of Individual Involved" value="" />
+      </md-form-field><br />
+      <md-form-field class="formField">
+        <input mdInput placeholder="Position of Individual Involved" value="" />
+      </md-form-field>
+    </form>
+  </md-card>
+</div>

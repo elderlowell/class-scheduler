@@ -1,0 +1,19 @@
+md-toolbar {
+}
+
+.navIcon {
+  flex: .5;
+}
+
+.navMenu {
+  flex: .5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.navMenu button {
+  font-size: 1em;
+  height: 100%;
+}

@@ -1,0 +1,86 @@
+.heading {
+  height: 40px;
+  text-align: left;
+  margin: 10px;
+}
+
+.scheduleWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px 5%;
+}
+
+.column {
+  flex: 1;
+  margin: 0 2.5px;
+  padding: 0;
+}
+
+md-card-title {
+  padding-top: 10px;
+}
+
+.courseItem {
+  min-height: 100px;
+  width: 100%;
+  background-color: dodgerblue;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.larger {
+  font-size: 1.1em;
+}
+
+.largerX2 {
+  font-size: 1.2em;
+}
+
+md-expansion-panel-header {
+  color: black !important;
+}
+
+md-expansion-panel {
+  text-align: left;
+}
+
+md-action-row {
+  padding: 2px;
+  justify-content: flex-end;
+  background-color: rgb(246,246,246);
+}
+
+.expansionContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mat-expansion-panel-content {
+  padding: 5px;
+}
+
+.leftContent {
+  flex: .7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.rightContent {
+  flex: .3;
+  justify-content: flex-end;
+}
+
+.toggle {
+  text-align: center;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
